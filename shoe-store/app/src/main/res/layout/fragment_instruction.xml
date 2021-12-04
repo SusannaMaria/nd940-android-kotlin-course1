@@ -6,24 +6,24 @@
 
         <variable
             name="controller"
-            type="com.udacity.shoestore.welcome.WelcomeFragment" />
+            type="com.udacity.shoestore.instruction.InstructionFragment" />
     </data>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-    tools:context=".WelcomeFragment">
+        tools:context=".InstructionFragment">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto"
-            android:text="Welcome to the Shoe Store" />
+            android:text="Instruction" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -32,13 +32,12 @@
             android:text="bla bla bla" />
 
         <Button
-            android:id="@+id/nextButton"
+            android:id="@+id/shoelistButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/roboto"
-            android:onClick="@{() -> controller.navigateToInstructions()}"
-            android:text="Read instruction" />
+            android:text="Shoe Lists" />
 
-</LinearLayout>
+    </LinearLayout>
 </layout>
