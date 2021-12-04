@@ -30,8 +30,16 @@ class LoginFragment : Fragment() {
         return binding.root
     }
 
-    fun register() {
+    fun login() {
+        if (loginViewModel.login(binding.loginEdittext.text.toString(), binding.passwordEdittext.text.toString())) {
+            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
+        } else {
+            showLoginError()
+        }
+    }
 
+    fun register() {
+        login()
     }
 
     private fun showLoginError() {
