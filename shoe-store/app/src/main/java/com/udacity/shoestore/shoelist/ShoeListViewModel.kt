@@ -13,7 +13,10 @@ class ShoeListViewModel: ViewModel()  {
     init {
         _listLiveData.value = PREDEFINED_SHOE_LIST
     }
-
+    fun addShoe(shoe: Shoe) {
+        PREDEFINED_SHOE_LIST.add(shoe)
+        //_listLiveData.value = PREDEFINED_SHOE_LIST
+    }
     companion object {
 
     //https://7esl.com/types-of-shoes/
