@@ -29,7 +29,7 @@ class ShoeDetailFragment : Fragment() {
         )
         binding.controller = this
         binding.shoe = Shoe("", 0.0, "", "")
-        (activity as MainActivity).supportActionBar?.title = "Add new shoe"
+        (activity as MainActivity).supportActionBar?.title = getString(R.string.shoedetail_title_actionbar)
         return binding.root
     }
 

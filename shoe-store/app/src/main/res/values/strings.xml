@@ -3,4 +3,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="size_format">Size: %.2f</string>
+    <string name="welcome_title_actionbar">Welcome to the Shoe Store</string>
+    <string name="instruction_title_actionbar">Instructions</string>
+    <string name="login_title_actionbar">Login to shoe store</string>
+    <string name="shoelist_title_actionbar">List of shoes</string>
+    <string name="shoedetail_title_actionbar">Add new shoe</string>
 </resources>

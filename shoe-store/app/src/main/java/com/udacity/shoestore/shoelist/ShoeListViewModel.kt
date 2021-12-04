@@ -11,11 +11,11 @@ class ShoeListViewModel: ViewModel()  {
         get() = _listLiveData
 
     init {
-        _listLiveData.value = PREDEFINED_SHOE_LIST
+        _listLiveData.value = PREDEFINED_SHOE_LIST.sortedBy { it.name }
     }
     fun addShoe(shoe: Shoe) {
         PREDEFINED_SHOE_LIST.add(shoe)
-        //_listLiveData.value = PREDEFINED_SHOE_LIST
+        _listLiveData.value = PREDEFINED_SHOE_LIST.sortedBy { it.name }
     }
     companion object {
 

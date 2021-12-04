@@ -26,10 +26,11 @@ class InstructionFragment : Fragment() {
         val binding: FragmentInstructionBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_instruction, container, false
         )
-        (activity as MainActivity).supportActionBar?.title = "Instructions"
+        (activity as MainActivity).supportActionBar?.title = getString(R.string.instruction_title_actionbar)
         binding.controller = this
         return binding.root
     }
+
     fun navigateToListing() {
         findNavController().navigate(InstructionFragmentDirections.actionInstructionFragmentToShoeListFragment())
     }

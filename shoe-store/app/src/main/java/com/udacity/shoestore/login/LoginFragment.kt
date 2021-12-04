@@ -27,7 +27,7 @@ class LoginFragment : Fragment() {
         )
         binding.controller = this
         loginViewModel = ViewModelProvider(this).get(LoginViewModel::class.java)
-        (activity as MainActivity).supportActionBar?.title = "Login to shoe store"
+        (activity as MainActivity).supportActionBar?.title =  getString(R.string.login_title_actionbar)
         return binding.root
     }
 

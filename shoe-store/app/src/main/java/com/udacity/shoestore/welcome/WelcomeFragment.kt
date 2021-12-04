@@ -25,7 +25,7 @@ class WelcomeFragment : Fragment() {
         val binding: FragmentWelcomeBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_welcome, container, false
         )
-        (activity as MainActivity).supportActionBar?.title = "Welcome to the Shoe Store"
+        (activity as MainActivity).supportActionBar?.title = getString(R.string.welcome_title_actionbar)
         binding.controller = this
         return binding.root
     }
