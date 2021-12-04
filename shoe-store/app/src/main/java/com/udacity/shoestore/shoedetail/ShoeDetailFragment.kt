@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
+import com.udacity.shoestore.MainActivity
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
 import com.udacity.shoestore.models.Shoe
@@ -28,7 +29,7 @@ class ShoeDetailFragment : Fragment() {
         )
         binding.controller = this
         binding.shoe = Shoe("", 0.0, "", "")
-
+        (activity as MainActivity).supportActionBar?.title = "Add new shoe"
         return binding.root
     }
 

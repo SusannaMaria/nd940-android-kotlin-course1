@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import com.udacity.shoestore.R
 import androidx.navigation.fragment.findNavController
+import com.udacity.shoestore.MainActivity
 import com.udacity.shoestore.databinding.FragmentWelcomeBinding
 /**
  * A simple [Fragment] subclass.
@@ -24,7 +25,7 @@ class WelcomeFragment : Fragment() {
         val binding: FragmentWelcomeBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_welcome, container, false
         )
-
+        (activity as MainActivity).supportActionBar?.title = "Welcome to the Shoe Store"
         binding.controller = this
         return binding.root
     }

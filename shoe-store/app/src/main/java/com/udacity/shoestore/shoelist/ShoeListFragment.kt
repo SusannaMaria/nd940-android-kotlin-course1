@@ -10,6 +10,7 @@ import android.widget.LinearLayout
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import com.udacity.shoestore.MainActivity
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
 import com.udacity.shoestore.models.Shoe
@@ -43,6 +44,8 @@ class ShoeListFragment : Fragment() {
         model.listLiveData.observe(viewLifecycleOwner, { list ->
             bindShoes(binding.list, list)
         })
+
+        (activity as MainActivity).supportActionBar?.title = "List of shoes"
 
         return binding.root
     }
