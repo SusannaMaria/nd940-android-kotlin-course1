@@ -19,7 +19,7 @@ class ShoeListViewModel: ViewModel()  {
     }
     companion object {
 
-    //https://7esl.com/types-of-shoes/
+    // taken some shoe types from https://7esl.com/types-of-shoes/
     val PREDEFINED_SHOE_LIST = mutableListOf<Shoe>(
         Shoe("Knee high boots",2.5,"Susanna","footwear products across the world",listOf<String>()),
         Shoe("Boots",3.0,"Maria","Lorem ipsum dolor sit amet",listOf<String>()),

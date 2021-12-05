@@ -56,7 +56,7 @@ class ShoeListFragment : Fragment() {
         items?.forEach { shoe ->
             val shoeBinding = DataBindingUtil.inflate<ItemShoeBinding>(layoutInflater, R.layout.item_shoe, list, false)
             shoeBinding.name.text = shoe.name
-            shoeBinding.companyText.text = shoe.company
+            shoeBinding.companyText.text = getString(R.string.company_format, shoe.company)
             shoeBinding.descriptionText.text = shoe.description
             shoeBinding.sizeText.text = getString(R.string.size_format, shoe.size)
             list.addView(shoeBinding.root)

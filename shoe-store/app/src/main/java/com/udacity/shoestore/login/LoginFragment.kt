@@ -12,6 +12,9 @@ import com.udacity.shoestore.MainActivity
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentLoginBinding
 
+/**
+ * Fragment to sign/register user into shoe store
+ */
 class LoginFragment : Fragment() {
 
     private lateinit var loginViewModel: LoginViewModel
@@ -31,20 +34,33 @@ class LoginFragment : Fragment() {
         return binding.root
     }
 
+    fun register() {
+        if (loginViewModel.register(binding.loginEdittext.text.toString(), binding.passwordEdittext.text.toString())) {
+            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
+
+        } else {
+            showRegisterError()
+        }
+    }
+
     fun login() {
         if (loginViewModel.login(binding.loginEdittext.text.toString(), binding.passwordEdittext.text.toString())) {
             findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
         } else {
-            showLoginError()
+            showRegisterError()
         }
     }
-
-    fun register() {
-        login()
-    }
-
+    /**
+     * Show login error, right now this will not be called because no check against database implemented
+     */
     private fun showLoginError() {
-        binding.loginEdittext.error = "Login and password length should be at least 5 characters!"
+        binding.loginEdittext.error = getString(R.string.login_error)
+    }
+    /**
+     * Show register error the rules are implemented in viewmodel class
+     */
+    private fun showRegisterError() {
+        binding.loginEdittext.error = getString(R.string.register_error)
     }
 
 }

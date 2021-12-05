@@ -14,6 +14,9 @@ import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
 import com.udacity.shoestore.models.Shoe
 import com.udacity.shoestore.shoelist.ShoeListViewModel
 
+/**
+ * Fragment to edit and add a new shoe into the store
+ */
 class ShoeDetailFragment : Fragment() {
 
     private lateinit var binding: FragmentShoeDetailBinding
@@ -32,13 +35,22 @@ class ShoeDetailFragment : Fragment() {
         (activity as MainActivity).supportActionBar?.title = getString(R.string.shoedetail_title_actionbar)
         return binding.root
     }
-
+    /**
+     * Save new shoe into list and return to the shoe list fragment
+     */
     fun save() {
+        // This is unsafe nullable type conversion to a non-nullable type
+        // !! will throw NullPointerException if the value is null.
+        // TODO don't know if this is valid
         val shoe = binding.shoe!!
+
         viewModel.addShoe(shoe)
         findNavController().popBackStack()
     }
 
+    /**
+     * Just return to the shoe list fragment
+     */
     fun cancel() {
         findNavController().popBackStack()
     }

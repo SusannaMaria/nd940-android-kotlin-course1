@@ -12,9 +12,7 @@ import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentInstructionBinding
 
 /**
- * A simple [Fragment] subclass.
- * Use the [InstructionFragment.newInstance] factory method to
- * create an instance of this fragment.
+ * Fragment to show a small instruction how to use the store
  */
 class InstructionFragment : Fragment() {
 
