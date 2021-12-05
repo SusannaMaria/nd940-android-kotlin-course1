@@ -41,7 +41,7 @@ class ShoeDetailFragment : Fragment() {
     fun save() {
         // This is unsafe nullable type conversion to a non-nullable type
         // !! will throw NullPointerException if the value is null.
-        // TODO don't know if this is valid
+        // TODO Check if double bang operator is valid here
         val shoe = binding.shoe!!
 
         viewModel.addShoe(shoe)
