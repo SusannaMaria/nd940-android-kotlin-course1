@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">ShoeStore</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="size_format">Size: %.2f</string>
     <string name="company_format">Company: %s</string>
     <string name="welcome_title_actionbar">Welcome to the Shoe Store</string>
@@ -10,4 +9,22 @@
     <string name="shoedetail_title_actionbar">Add new shoe</string>
     <string name="register_error">Login and password length should be at least 5 characters!</string>
     <string name="login_error">Check your credentials!</string>
+    <string name="welcome_title">Welcome to the Shoe Store</string>
+    <string name="welcome_text">This is the first app developed for the udacity android nd. It is a shoe store app which is specialized in selling shoes.
+        From slippers to athletic shoes to boots. </string>
+    <string name="read_instruction">Read instruction</string>
+    <string name="instruction_title">How to use the store</string>
+    <string name="instruction_text">• click on the next button to access the list of available shoes\n• click on the + button shown on the show list to add a new show.\n• After adding a show by clicking the save button you can find the new shoe in the sorted list. </string>
+    <string name="button_shoe_list_text">go to the list of shoes</string>
+    <string name="login_username_hint">login with email</string>
+    <string name="login_password_hint">password</string>
+    <string name="button_login_text">Login</string>
+    <string name="button_register_text">Register</string>
+    <string name="detail_shoe_name">Shoe name</string>
+    <string name="detail_shoe_company">Shoe Company</string>
+    <string name="detail_shoe_size">Shoe Size</string>
+    <string name="detail_description">Description</string>
+    <string name="button_cancel_text">Cancel</string>
+    <string name="button_save_text">Save</string>
+    <string name="button_add_shoe_text">add shoe</string>
 </resources>

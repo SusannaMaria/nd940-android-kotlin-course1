@@ -36,7 +36,7 @@
             android:layout_marginBottom="32dp"
             android:clickable="true"
             android:focusable="true"
-            android:contentDescription="details"
+            android:contentDescription="@string/button_add_shoe_text"
             android:onClick="@{() -> controller.navigateToDetails()}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
