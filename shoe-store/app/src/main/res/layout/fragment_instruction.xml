@@ -6,7 +6,7 @@
 
         <variable
             name="controller"
-            type="com.udacity.shoestore.instruction.InstructionFragment" />
+            type="com.udacity.shoestore.screens.instruction.InstructionFragment" />
     </data>
     <LinearLayout
         android:layout_width="match_parent"

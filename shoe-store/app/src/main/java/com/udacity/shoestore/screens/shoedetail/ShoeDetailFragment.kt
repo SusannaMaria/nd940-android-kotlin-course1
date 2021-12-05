@@ -1,4 +1,4 @@
-package com.udacity.shoestore.shoedetail
+package com.udacity.shoestore.screens.shoedetail
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -12,7 +12,7 @@ import com.udacity.shoestore.MainActivity
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
 import com.udacity.shoestore.models.Shoe
-import com.udacity.shoestore.shoelist.ShoeListViewModel
+import com.udacity.shoestore.screens.shoelist.ShoeListViewModel
 
 /**
  * Fragment to edit and add a new shoe into the store

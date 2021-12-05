@@ -7,7 +7,7 @@
 
         <variable
             name="controller"
-            type="com.udacity.shoestore.shoedetail.ShoeDetailFragment" />
+            type="com.udacity.shoestore.screens.shoedetail.ShoeDetailFragment" />
 
         <variable
             name="shoe"
@@ -18,7 +18,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="12dp"
-    tools:context=".shoedetail.ShoeDetailFragment">
+    tools:context=".screens.shoedetail.ShoeDetailFragment">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"

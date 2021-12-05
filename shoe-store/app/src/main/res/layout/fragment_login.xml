@@ -6,7 +6,7 @@
 
         <variable
             name="controller"
-            type="com.udacity.shoestore.login.LoginFragment" />
+            type="com.udacity.shoestore.screens.login.LoginFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
