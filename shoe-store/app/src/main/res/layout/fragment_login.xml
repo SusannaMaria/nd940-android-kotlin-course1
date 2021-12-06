@@ -8,7 +8,15 @@
             name="controller"
             type="com.udacity.shoestore.screens.login.LoginFragment" />
     </data>
-
+    <!--
+    I've used ConstraintLayout for the top level decor for the login
+    because we did some exercises in the course and the selection
+    seems natural. I want to learn more to use ConstraintLayout
+    effectively for more complex layouts. TextInputLayout makes the
+    use of textfields fun and really want to use it in next apps with
+    more use of the style options like shown in:
+    https://medium.com/omisoft/textinputlayout-styling-8b36a5e0d73c
+    -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"

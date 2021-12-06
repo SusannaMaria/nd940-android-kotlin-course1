@@ -8,6 +8,13 @@
             name="controller"
             type="com.udacity.shoestore.screens.welcome.WelcomeFragment" />
     </data>
+
+    <!--
+      I decided to use a linear layout with all elements displayed
+      according to their orientation, since only simple text without
+      complex layout requirements should be shown.
+    -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

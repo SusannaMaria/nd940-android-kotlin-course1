@@ -8,6 +8,12 @@
             type="com.udacity.shoestore.screens.shoelist.ShoeListFragment" />
     </data>
 
+    <!--
+    ConstraintLayout allowed me to pin the FloatingActionButton
+    in the right bottom corner easily. Seems a good example in
+    later apps, if having scrollview and FAB to view and modify
+    long lists.
+    -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

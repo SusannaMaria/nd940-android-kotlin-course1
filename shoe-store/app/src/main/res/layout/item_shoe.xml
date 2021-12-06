@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- This layout is quite complex, to keep the structure flat I chose ConstraintLayout -->
+    <!-- To layout a bunch of elements with more complex requirements,
+     I decided to use ConstraintLayout. It can be extended later, because of
+      the flat design concept, if want to show images or more text data.-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
